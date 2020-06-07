@@ -12,6 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/PotionShop.unity
     guid: 66cdc50dcb6892d4d9ffdd31aeb0bfb2
   - enabled: 1
+    path: Assets/Scenes/Farm.unity
+    guid: 771940279a4ab974a940a4af6ff820f7
+  - enabled: 1
     path: Assets/Scenes/Craft.unity
     guid: a4844887fbd6aa54790aeae925d6a2ba
+  - enabled: 1
+    path: Assets/Scenes/Inventory.unity
+    guid: 15961e77471ec7b43850d2e8f636144d
+  - enabled: 1
+    path: Assets/Scenes/Trade.unity
+    guid: 4478513bc8f10b3408a81c457b0ddd6a
+  - enabled: 1
+    path: Assets/Scenes/Recipe.unity
+    guid: baf9a02ab0e639a48bf7e2874f6c4193
   m_configObjects: {}
