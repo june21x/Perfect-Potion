@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Navigation : MonoBehaviour
 {
+
     public void OpenMainMenu()
     {
         SceneManager.LoadScene(0);
@@ -36,10 +38,6 @@ public class Navigation : MonoBehaviour
     public void OpenRecipeScene()
     {
         SceneManager.LoadScene(6);
-    }
-    public void ToggleMoreNavigation(GameObject gameObject)
-    {
-        gameObject.SetActive(!gameObject.activeSelf);
     }
 
 }
