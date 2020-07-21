@@ -1406,6 +1406,7 @@ GameObject:
   - component: {fileID: 500376764}
   - component: {fileID: 500376763}
   - component: {fileID: 500376762}
+  - component: {fileID: 500376766}
   m_Layer: 0
   m_Name: Hexagon (2)
   m_TagString: Untagged
@@ -1573,6 +1574,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &500376766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500376760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 423095331}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &548948946
 GameObject:
   m_ObjectHideFlags: 0
@@ -2147,6 +2176,7 @@ GameObject:
   - component: {fileID: 599048615}
   - component: {fileID: 599048614}
   - component: {fileID: 599048613}
+  - component: {fileID: 599048617}
   m_Layer: 0
   m_Name: Hexagon (1)
   m_TagString: Untagged
@@ -2314,6 +2344,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &599048617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599048611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 423095331}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &623423411
 GameObject:
   m_ObjectHideFlags: 0
@@ -5083,7 +5141,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.33976695, g: 1, b: 0.33333337, a: 1}
     m_PressedColor: {r: 0.33976695, g: 1, b: 0.33333337, a: 1}
     m_SelectedColor: {r: 0.33490568, g: 0.77472, b: 1, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 0.33333337, b: 0.46321523, a: 1}
     m_ColorMultiplier: 2
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -5258,7 +5316,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.33976695, g: 1, b: 0.33333337, a: 1}
     m_PressedColor: {r: 0.33976695, g: 1, b: 0.33333337, a: 1}
     m_SelectedColor: {r: 0.33490568, g: 0.77472, b: 1, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 0.33333337, b: 0.46321523, a: 1}
     m_ColorMultiplier: 2
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -6245,9 +6303,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bgmSlider: {fileID: 1146119822}
   soundSlider: {fileID: 1205477355}
-  bgmAudio: {fileID: 0}
-  soundAudio:
-  - {fileID: 0}
+  bgmAudio: {fileID: 2126030637}
+  soundAudios:
+  - {fileID: 423095331}
   audioMixer: {fileID: 24100000, guid: 891892db3af76ff4da34655b42bc37c9, type: 2}
   bgmMuteToggle: {fileID: 548948947}
   soundMuteToggle: {fileID: 2020760329}
@@ -9536,7 +9594,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2126030639}
   - component: {fileID: 2126030637}
-  - component: {fileID: 2126030638}
   m_Layer: 0
   m_Name: BGMAudioSource
   m_TagString: Music
@@ -9641,18 +9698,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2126030638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2126030636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a43759f38c1812942a1e219db4dd9754, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &2126030639
 Transform:
   m_ObjectHideFlags: 0

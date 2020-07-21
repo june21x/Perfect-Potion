@@ -554,7 +554,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -2.5, y: 0.20000076}
   m_SizeDelta: {x: 5, y: 0.40458584}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1229,6 +1229,7 @@ GameObject:
   - component: {fileID: 389101922}
   - component: {fileID: 389101921}
   - component: {fileID: 389101924}
+  - component: {fileID: 389101925}
   m_Layer: 0
   m_Name: Hexagon (1)
   m_TagString: Untagged
@@ -1396,6 +1397,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &389101925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389101919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1805935765}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &408877337
 GameObject:
   m_ObjectHideFlags: 0
@@ -2255,6 +2284,7 @@ GameObject:
   - component: {fileID: 565805140}
   - component: {fileID: 565805139}
   - component: {fileID: 565805138}
+  - component: {fileID: 565805142}
   m_Layer: 0
   m_Name: Hexagon (2)
   m_TagString: Untagged
@@ -2422,6 +2452,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &565805142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565805136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1805935765}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &642070617
 GameObject:
   m_ObjectHideFlags: 0
@@ -2860,6 +2918,7 @@ GameObject:
   - component: {fileID: 799769636}
   - component: {fileID: 799769635}
   - component: {fileID: 799769638}
+  - component: {fileID: 799769639}
   m_Layer: 0
   m_Name: Hexagon (2)
   m_TagString: Untagged
@@ -3027,6 +3086,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &799769639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799769633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1805935765}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &833955140
 GameObject:
   m_ObjectHideFlags: 0
@@ -3272,6 +3359,7 @@ GameObject:
   - component: {fileID: 901904854}
   - component: {fileID: 901904857}
   - component: {fileID: 901904858}
+  - component: {fileID: 901904859}
   m_Layer: 0
   m_Name: Hexagon (3)
   m_TagString: Untagged
@@ -3454,6 +3542,34 @@ MonoBehaviour:
   moreNavigations: {fileID: 1474919284}
   more: {fileID: 21300000, guid: ffecf1341d0a6d14db06eabadb688e59, type: 3}
   less: {fileID: 21300000, guid: 63a0a7705c47b1b459d204942542c2f6, type: 3}
+--- !u!114 &901904859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901904852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1805935765}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &954679354
 GameObject:
   m_ObjectHideFlags: 0
@@ -3464,7 +3580,6 @@ GameObject:
   m_Component:
   - component: {fileID: 954679355}
   - component: {fileID: 954679356}
-  - component: {fileID: 954679357}
   m_Layer: 0
   m_Name: BGMAudioSource
   m_TagString: Music
@@ -3583,18 +3698,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &954679357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954679354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a43759f38c1812942a1e219db4dd9754, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &982227700
 GameObject:
   m_ObjectHideFlags: 0
@@ -3842,6 +3945,7 @@ GameObject:
   - component: {fileID: 1069687169}
   - component: {fileID: 1069687168}
   - component: {fileID: 1069687171}
+  - component: {fileID: 1069687172}
   m_Layer: 0
   m_Name: Hexagon
   m_TagString: Untagged
@@ -4009,6 +4113,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1069687172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069687166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1805935765}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1088440237
 GameObject:
   m_ObjectHideFlags: 0
@@ -4494,7 +4626,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1203340385
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5145,7 +5277,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.33976695, g: 1, b: 0.33333337, a: 1}
     m_PressedColor: {r: 0.33976695, g: 1, b: 0.33333337, a: 1}
     m_SelectedColor: {r: 0.33490568, g: 0.77472, b: 1, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 0.33333337, b: 0.46321523, a: 1}
     m_ColorMultiplier: 2
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -5292,7 +5424,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -2.5, y: 0}
   m_SizeDelta: {x: 5, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5365,7 +5497,7 @@ MonoBehaviour:
   bgmSlider: {fileID: 1584996113}
   soundSlider: {fileID: 2087500054}
   bgmAudio: {fileID: 954679356}
-  soundAudio:
+  soundAudios:
   - {fileID: 1805935765}
   audioMixer: {fileID: 24100000, guid: 891892db3af76ff4da34655b42bc37c9, type: 2}
   bgmMuteToggle: {fileID: 1036814106}
@@ -6453,7 +6585,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.33976695, g: 1, b: 0.33333337, a: 1}
     m_PressedColor: {r: 0.33976695, g: 1, b: 0.33333337, a: 1}
     m_SelectedColor: {r: 0.33490568, g: 0.77472, b: 1, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 0.33333337, b: 0.46321523, a: 1}
     m_ColorMultiplier: 2
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -6531,6 +6663,7 @@ GameObject:
   - component: {fileID: 2106230067}
   - component: {fileID: 2106230066}
   - component: {fileID: 2106230065}
+  - component: {fileID: 2106230069}
   m_Layer: 0
   m_Name: Hexagon (1)
   m_TagString: Untagged
@@ -6698,3 +6831,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2106230069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106230063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1805935765}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

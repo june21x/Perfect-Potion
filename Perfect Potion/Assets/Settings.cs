@@ -19,21 +19,39 @@ public class Settings : MonoBehaviour
     private int isBGMMute, isSoundMute;
     private int isFullscreen;
     public AudioSource bgmAudio;
-    public AudioSource[] soundAudio;
+    public AudioSource[] soundAudios;
     public AudioMixer audioMixer;
     public Toggle bgmMuteToggle;
     public Toggle soundMuteToggle;
     public Toggle fullscreenToggle;
 
+    void Awake()
+    {
+        DontDestroyOnLoad(audioMixer);
+        
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Music");
+
+        if (objs.Length > 1)
+        {
+            Destroy(bgmAudio);
+        }
+
+        DontDestroyOnLoad(bgmAudio);
+
+        foreach (AudioSource soundAudio in soundAudios)
+        {
+            DontDestroyOnLoad(soundAudio);
+        }
+    }
     void Start()
     {
-        firstPlayInt = PlayerPrefs.GetInt(FirstPlay);
+       firstPlayInt = PlayerPrefs.GetInt(FirstPlay);
 
         if (firstPlayInt == 0) //First Play
         {
-            bgmVolume = 0;
+            bgmVolume = 0f;
             isBGMMute = 0;
-            soundVolume = 0;
+            soundVolume = 0f;
             isSoundMute = 0;
             isFullscreen = 1;
 
@@ -69,28 +87,33 @@ public class Settings : MonoBehaviour
             bgmSlider.value = Mathf.Pow(10, bgmVolume / 10);
             soundSlider.value = Mathf.Pow(10, soundVolume / 10);
 
+            Debug.Log("(1) BGM Volume in PlayerPref = " + PlayerPrefs.GetFloat(prefBGMVolume));
+            Debug.Log("(1) BGM Volume in Slider = " + bgmSlider.value);
+
             if (PlayerPrefs.GetInt(prefIsBGMMute) == 1)
             {
                 audioMixer.SetFloat(mixerBGMVolume, -80f);
                 bgmMuteToggle.isOn = true;
-                bgmSlider.enabled = false;
+                bgmSlider.interactable = false;
+                
             } else
             {
                 audioMixer.SetFloat(mixerBGMVolume, bgmVolume);
                 bgmMuteToggle.isOn = false;
-                bgmSlider.enabled = true;
+                bgmSlider.interactable = true;
+                
             }
 
             if (PlayerPrefs.GetInt(prefIsSoundMute) == 1)
             {
                 audioMixer.SetFloat(mixerSoundVolume, -80f);
                 soundMuteToggle.isOn = true;
-                soundSlider.enabled = false;
+                soundSlider.interactable = false;
             } else
             {
                 audioMixer.SetFloat(mixerSoundVolume, soundVolume);
                 soundMuteToggle.isOn = false;
-                soundSlider.enabled = true;
+                soundSlider.interactable = true;
             }
 
             if (PlayerPrefs.GetInt(prefIsFullscreen) == 1)
@@ -103,6 +126,9 @@ public class Settings : MonoBehaviour
                 fullscreenToggle.isOn = false;
             }
         }
+
+        Debug.Log("(2) BGM Volume in PlayerPref = " + PlayerPrefs.GetFloat(prefBGMVolume));
+        Debug.Log("(2) BGM Volume in Slider = " + bgmSlider.value);
 
     }
 
@@ -123,15 +149,16 @@ public class Settings : MonoBehaviour
         {
             audioMixer.SetFloat(mixerBGMVolume, -80f);
             PlayerPrefs.SetInt(prefIsBGMMute, 1);
-            bgmSlider.enabled = false;
+            bgmSlider.interactable = false;
         } else
         {
             audioMixer.SetFloat(mixerBGMVolume, PlayerPrefs.GetFloat(prefBGMVolume));
             PlayerPrefs.SetInt(prefIsBGMMute, 0);
-            bgmSlider.enabled = true;
+            bgmSlider.interactable = true;
         }
 
         Debug.Log("BGM Volume in PlayerPref = " + PlayerPrefs.GetFloat(prefBGMVolume));
+        Debug.Log("BGM Volume in Slider = " + bgmSlider.value);
 
     }
 
@@ -141,13 +168,13 @@ public class Settings : MonoBehaviour
         {
             audioMixer.SetFloat(mixerSoundVolume, -80f);
             PlayerPrefs.SetInt(prefIsSoundMute, 1);
-            soundSlider.enabled = false;
+            soundSlider.interactable = false;
         }
         else
         {
             audioMixer.SetFloat(mixerSoundVolume, PlayerPrefs.GetFloat(prefSoundVolume));
             PlayerPrefs.SetInt(prefIsSoundMute, 0);
-            soundSlider.enabled = true;
+            soundSlider.interactable = true;
         }
 
     }
