@@ -49,7 +49,7 @@ public class Settings : MonoBehaviour
 
         if (firstPlayInt == 0) //First Play
         {
-            bgmVolume = 0f;
+            bgmVolume = -10f;
             isBGMMute = 0;
             soundVolume = 0f;
             isSoundMute = 0;
